@@ -1,5 +1,3 @@
-"use client"
-
 import CollectionList from "./CollectionList"
 
 const Collection = () => {
@@ -58,7 +56,7 @@ const Collection = () => {
       <div className="text-center text-4xl py-9 my-6">
         <p>KM CHOKSI COLLECTION</p>
       </div>
-      <div className="grid grid-cols-6 justify-between">
+      <div className="grid grid-cols-6 justify-between mx-10">
         {collectionList.map((data) => (
           <CollectionList key={data.title} data={data} />
         ))}
