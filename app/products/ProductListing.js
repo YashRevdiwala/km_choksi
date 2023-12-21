@@ -1,9 +1,5 @@
 "use client"
 
-import { Carousel } from "react-responsive-carousel"
-import CollectionList from "../components/CollectionList"
-import { Card } from "@/components/ui/card"
-import Image from "next/image"
 import { Separator } from "@/components/ui/separator"
 import { Montserrat } from "next/font/google"
 import { cn } from "@/lib/utils"
@@ -19,8 +15,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import Slider from "./Slider"
 import Link from "next/link"
@@ -86,97 +80,97 @@ const ProductListing = () => {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-19.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-02.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-10.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-04.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-16.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-04.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-06.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-05.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-08.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-09.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-18.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-13.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-05_1.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-07.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-09.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-15.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
   ]
 

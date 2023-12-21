@@ -8,7 +8,6 @@ import {
   YoutubeIcon,
 } from "lucide-react"
 import Link from "next/link"
-import { SocialIcon } from "react-social-icons"
 
 const Footer = () => {
   return (
