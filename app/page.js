@@ -1,4 +1,3 @@
-import { Separator } from "@/components/ui/separator"
 import Collection from "./components/Collection"
 import Header from "./components/Header"
 import Slider from "./components/Slider"
@@ -6,7 +5,7 @@ import Products from "./components/Products"
 import About from "./components/About"
 import Kanyadan from "./components/Kanyadan"
 import Image from "next/image"
-import Featured from "./Featured"
+import Featured from "./components/Featured"
 import Footer from "./components/Footer"
 
 const Home = () => {
@@ -15,7 +14,6 @@ const Home = () => {
       <Header />
       <Slider />
       <Collection />
-      {/* <Separator classname="py-4 px-9 w-[100px]" /> */}
       <hr className="w-[1450px] mx-auto my-4" />
       <Products />
       <About />

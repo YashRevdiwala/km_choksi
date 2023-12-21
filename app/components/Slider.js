@@ -7,20 +7,24 @@ const Slider = () => {
   return (
     <>
       <Carousel
+        interval={3000}
         autoPlay={true}
         infiniteLoop={true}
-        interval={2000}
+        emulateTouch={true}
         showThumbs={false}
+        showArrows={false}
         showStatus={false}
+        stopOnHover={false}
+        showIndicators={false}
       >
         <div>
-          <img className="py-3 my-4" src="/assets/slider/01.jpg" />
+          <img className="pb-3 mb-4" src="/assets/slider/01.jpg" />
         </div>
         <div>
-          <img className="py-3 my-4" src="/assets/slider/02.jpg" />
+          <img className="pb-3 mb-4" src="/assets/slider/02.jpg" />
         </div>
         <div>
-          <img className="py-3 my-4" src="/assets/slider/03.jpg" />
+          <img className="pb-3 mb-4" src="/assets/slider/03.jpg" />
         </div>
       </Carousel>
     </>

@@ -1,22 +1,9 @@
 import { Button } from "@/components/ui/button"
 import { data } from "autoprefixer"
 import Image from "next/image"
+import Link from "next/link"
 
 const Kanyadan = () => {
-  const kanyadanCollection = [
-    {
-      src: "/assets/brands/brand-img.jpg",
-      title: "KANYADAN",
-      subtitle: "PURE WEDDING COLLECTION",
-      desc: "A bespoke collection to shine like no other on your special day",
-    },
-    {
-      src: "/assets/brands/brand-img01.jpg",
-      title: "KANYADAN",
-      subtitle: "PURE WEDDING COLLECTION",
-      desc: "A bespoke collection to shine like no other on your special day",
-    },
-  ]
   return (
     <>
       <div className="flex flex-col gap-4 my-8 py-8">
@@ -37,8 +24,9 @@ const Kanyadan = () => {
               variant="secondary"
               size="lg"
               className="hover:bg-black hover:text-white border border-black"
+              asChild
             >
-              EXPLORE THE COLLECTION
+              <Link href="/products">EXPLORE THE COLLECTION</Link>
             </Button>
           </div>
         </div>
@@ -53,8 +41,9 @@ const Kanyadan = () => {
               variant="secondary"
               size="lg"
               className="hover:bg-black hover:text-white border border-black"
+              asChild
             >
-              EXPLORE THE COLLECTION
+              <Link href="/products">EXPLORE THE COLLECTION</Link>
             </Button>
           </div>
           <Image

@@ -1,6 +1,7 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 const About = () => {
   const brands = [
@@ -46,8 +47,9 @@ const About = () => {
             variant="secondary"
             size="lg"
             className="hover:bg-black hover:text-white border border-black"
+            asChild
           >
-            About us
+            <Link href="/our-history">About us</Link>
           </Button>
         </div>
       </div>

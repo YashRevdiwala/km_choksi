@@ -54,7 +54,10 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <p>© 2023 K M Choksi jewellers. | Website Designed By: Setblue</p>
+      <p>
+        © 2023 K M Choksi jewellers. | Website Designed By:
+        <Link href="https://www.setblue.com/">Setblue</Link>
+      </p>
     </div>
   )
 }
