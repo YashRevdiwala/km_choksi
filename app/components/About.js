@@ -10,29 +10,30 @@ const About = () => {
     { id: "3", src: "/assets/brands/brand-1.jpg" },
     { id: "4", src: "/assets/brands/brand-2.jpg" },
     { id: "5", src: "/assets/brands/brand-1.jpg" },
+    { id: "6", src: "/assets/brands/brand-2.jpg" },
   ]
   return (
-    <div className="my-6 py-6">
-      <div className="py-4 my-4 text-3xl text-center">
+    <div className="my-6 py-6 w-screen px-3 mx-3">
+      <div className="py-4 my-4 text-3xl md:text-center">
         <p className="text-red-700">story of</p>
         <p className="mt-3">K M CHOKSI JEWELLERS</p>
       </div>
-      <div className=" flex flex-row my-4 gap-4 px-9">
+      <div className=" flex md:flex-row flex-col md:my-4 md:gap-4 ">
         <Image
           src="/assets/about/about01.jpg"
           width={350}
           height={600}
           alt="about"
-          className="px-2"
+          className="px-2 hidden md:block"
         />
         <Image
           src="/assets/about/about02.jpg"
           width={350}
           height={600}
           alt="about"
-          className="mx-4"
+          className="mx-4 hidden md:block"
         />
-        <div className="pl-14 pt-14 ml-14 w-[450px]">
+        <div className="md:pl-14 md:pt-14 pt-2 md:ml-14 md:w-[450px] w-[350px]">
           <p className="text-3xl font-bold">About us</p>
           <p className="py-3 my-3">
             Building a legacy brand in the jewellery business is a lifelong
@@ -52,15 +53,32 @@ const About = () => {
             <Link href="/our-history">About us</Link>
           </Button>
         </div>
+        <div className="flex flex-row md:hidden w-auto py-10 justify-start space-x-2">
+          <Image
+            src="/assets/about/about01.jpg"
+            width={170}
+            height={300}
+            alt="about"
+            className=""
+          />
+          <Image
+            src="/assets/about/about02.jpg"
+            width={170}
+            height={300}
+            alt="about"
+            className=""
+          />
+        </div>
       </div>
-      <div className="mt-12 pt-12 flex flex-row justify-center gap-4">
+      <div className="mt-12 pt-12 md:flex grid grid-cols-2 md:flex-row justify-center gap-4">
         {brands.map((brand) => (
           <Image
+            key={brand.id}
             src={brand.src}
             width={250}
             height={250}
             alt="brand-logo"
-            className="rounded-md"
+            className="rounded-md w-auto h-auto"
           />
         ))}
       </div>

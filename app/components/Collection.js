@@ -52,11 +52,11 @@ const Collection = () => {
     },
   ]
   return (
-    <div>
+    <div className="w-screen lg:w-screen">
       <div className="text-center text-4xl py-9 my-6">
         <p>KM CHOKSI COLLECTION</p>
       </div>
-      <div className="grid grid-cols-6 justify-between mx-10">
+      <div className="grid grid-cols-2 md:grid-cols-6 justify-between mx-10">
         {collectionList.map((data) => (
           <CollectionList key={data.title} data={data} />
         ))}

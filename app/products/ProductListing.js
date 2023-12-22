@@ -336,8 +336,8 @@ const ProductListing = () => {
               "grid grid-cols-4 py-8 font-[15px]"
             )}
           >
-            {productList.map((data) => (
-              <div className="py-4">
+            {productList.map((data, index) => (
+              <div key={index} className="py-4">
                 <Link href={data.href}>
                   <img
                     src={data.src}

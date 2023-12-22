@@ -7,19 +7,21 @@ import Kanyadan from "./components/Kanyadan"
 import Image from "next/image"
 import Featured from "./components/Featured"
 import Footer from "./components/Footer"
+import ScrollTop from "./components/ScrollToTop"
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Slider />
+      <ScrollTop />
+      <Slider className="hidden" />
       <Collection />
-      <hr className="w-[1450px] mx-auto my-4" />
+      <hr className="hidden lg:w-[1450px] lg:mx-auto lg:my-4" />
       <Products />
       <About />
-      <hr className="w-[1600px] my-6" />
+      <hr className="w-screen md:w-[1600px] my-6" />
       <Kanyadan />
-      <div className="flex px-5 py-4 mx-6 justify-center items-center">
+      <div className="flex md:px-5 md:py-4 md:mx-6 justify-center items-center w-screen px-3">
         <Image
           src="/assets/bottom-banner.jpg"
           width={1920}

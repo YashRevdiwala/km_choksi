@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Content = () => {
   return (
-    <div className="py-6">
+    <div className="pb-6">
       <div className="bg-[url('/assets//inner_bg.jpg')] w-screen h-96 flex ">
         <div className="py-32 pl-12 absolute">
           <div className=" bg-white h-28 w-96 bg-contain">

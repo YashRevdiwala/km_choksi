@@ -18,7 +18,7 @@ import { Textarea } from "@/components/ui/textarea"
 
 const AppointmentForm = () => {
   return (
-    <div className="pt-4 mt-4">
+    <div className="">
       <div className="flex flex-row bg-[url('/assets/inner_bg.jpg')] px-4 ">
         <div className="basis-1/2">
           <img src="/assets/book-appointment.jpg" />

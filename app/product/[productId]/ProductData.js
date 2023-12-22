@@ -50,14 +50,29 @@ const ProductData = () => {
           <form action="">
             <div className="flex flex-col space-y-4">
               <div className="flex flex-row space-x-3">
-                <Input type="text" placeholder="Your Name*" required />
-                <Input type="email" placeholder="Your Email*" required />
+                <Input
+                  type="text"
+                  name="form-field"
+                  placeholder="Your Name*"
+                  required
+                />
+                <Input
+                  type="email"
+                  name="form-field"
+                  placeholder="Your Email*"
+                  required
+                />
               </div>
               <div className="flex flex-row space-x-3">
-                <Input type="text" placeholder="Mobile No*" required />
-                <Input type="text" placeholder="Subject" />
+                <Input
+                  type="text"
+                  name="form-field"
+                  placeholder="Mobile No*"
+                  required
+                />
+                <Input type="text" name="form-field" placeholder="Subject" />
               </div>
-              <Textarea defaultValue="Message" />
+              <Textarea defaultValue="Message" name="form-field" />
               <Button variant="destructive">SEND NOW</Button>
             </div>
           </form>

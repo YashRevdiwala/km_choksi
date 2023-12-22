@@ -1,6 +1,9 @@
+import { Separator } from "@/components/ui/separator"
+
 const Products = () => {
   return (
-    <>
+    <div className="w-screen">
+      <Separator className="my-6" />
       <p className="text-center text-4xl my-4 py-4">
         Gold & Diamond Jewellery Products
       </p>
@@ -38,7 +41,7 @@ const Products = () => {
           alt="banner-image"
         />
       </div>
-    </>
+    </div>
   )
 }
 
