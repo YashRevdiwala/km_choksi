@@ -10,11 +10,32 @@ import Link from "next/link"
 
 const ProductData = () => {
   return (
-    <div className="flex flex-row space-x-12">
+    <div className="flex flex-col md:flex-row w-screen md:space-x-12 space-y-5">
+      <div className="md:hidden pt-5  pl-4">
+        <img
+          src="/assets/product-page-17.jpg"
+          alt="Product Image"
+          className="w-[360px] "
+        />
+      </div>
+      <div className="md:hidden  pl-4">
+        <img
+          src="/assets/product-page-18.jpg"
+          alt="Product Image"
+          className="w-[360px] "
+        />
+      </div>
+      <div className="md:hidden  pl-4">
+        <img
+          src="/assets/product-page-16.jpg"
+          alt="Product Image"
+          className="w-[360px] "
+        />
+      </div>
       <Slider />
-      <div className="px-12 py-16">
+      <div className="md:px-12 px-5 py-16">
         <p className="text-3xl">Bold Glint Diamond Ring</p>
-        <p className="py-5 w-[550px]">
+        <p className="py-5 md:w-[550px]">
           Celebrate the quirks and nuances of your bond with these couple rings,
           crafted in 22 karat yellow gold! Comes in a set of 2.
         </p>

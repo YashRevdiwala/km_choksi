@@ -2,8 +2,8 @@ import { Carousel } from "react-responsive-carousel"
 
 const Slider = () => {
   return (
-    <div className="py-16 pl-16">
-      <div className="px-5 overflow-hidden ">
+    <div className="md:py-16 md:pl-16 ">
+      <div className="md:px-5 md:overflow-hidden max-sm:hidden ">
         <Carousel
           axis="vertical"
           interval={2000}

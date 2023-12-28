@@ -1,13 +1,13 @@
-import Collection from "./components/Collection"
-import Header from "./components/Header"
-import Slider from "./components/Slider"
-import Products from "./components/Products"
-import About from "./components/About"
-import Kanyadan from "./components/Kanyadan"
+import Collection from "./(components)/Collection"
+import Header from "./(components)/Header"
+import Slider from "./(components)/Slider"
+import Products from "./(components)/Products"
+import About from "./(components)/About"
+import Kanyadan from "./(components)/Kanyadan"
 import Image from "next/image"
-import Featured from "./components/Featured"
-import Footer from "./components/Footer"
-import ScrollTop from "./components/ScrollToTop"
+import Featured from "./(components)/Featured"
+import Footer from "./(components)/Footer"
+import ScrollTop from "./(components)/ScrollToTop"
 
 const Home = () => {
   return (

@@ -12,25 +12,25 @@ const Suggestion = () => {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-19.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-02.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-10.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
     {
       title: "Bold Glint Diamond Ring",
       desc: "Unisex | Finger Ring | 22 Karat",
       src: "/assets/product-04.jpg",
-      href: "/product-detail/bold-glint-diamond-ring",
+      href: "/product/bold-glint-diamond-ring",
     },
   ]
 
@@ -42,16 +42,21 @@ const Suggestion = () => {
       <div
         className={cn(
           montserrat.className,
-          "grid grid-cols-4 py-8 font-[15px] space-x-4"
+          "grid grid-cols-2 md:grid-cols-4 py-8 font-[15px] md:space-x-4 max-sm:pl-3"
         )}
       >
         {productList.map((data) => (
-          <div key={data.src} className="py-4">
+          <div key={data.src} className="md:py-4 py-6 px-2">
             <Link href={data.href}>
-              <img src={data.src} alt="product-image" className="h-[350px]" />
-              <p className="pt-4 pb-2">{data.title}</p>
-              <div className="flex font-semibold text-muted text-[#6f6868]">
-                <pre>{data.desc}</pre>
+              <img
+                src={data.src}
+                alt="product-image"
+                className="h-[150px] md:h-[350px]"
+              />
+              <p className="pt-4 pb-2 pr-2">{data.title}</p>
+              <div className="font-semibold pr-2 text-[#777]">
+                <p className="md:hidden">{data.desc}</p>
+                <pre className="max-sm:hidden">{data.desc}</pre>
               </div>
             </Link>
           </div>

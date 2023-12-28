@@ -176,12 +176,12 @@ const ProductListing = () => {
 
   return (
     <div>
-      <Slider />
+      {/* <Slider /> */}
       <div>
         <div className="pl-8 py-10">
           <div className="flex gap-[1090px]">
             <p className="text-4xl">Wedding Rings</p>
-            <div className="flex justify-end items-end px-8">
+            <div className="md:flex md:justify-end md:items-end md:px-8 max-sm:fixed max-sm:bottom-5 max-sm:left-5 max-sm:z-50 max-sm:cursor-pointer">
               <Sheet>
                 <SheetTrigger asChild>
                   <Button variant="destructive">
@@ -190,12 +190,12 @@ const ProductListing = () => {
                   </Button>
                 </SheetTrigger>
                 <SheetContent side="left">
-                  <SheetHeader className="px-7">
+                  <SheetHeader className="px-7 max-sm:pt-28">
                     <SheetTitle>Filter by</SheetTitle>
                     <SheetDescription>25 Products</SheetDescription>
                   </SheetHeader>
                   <Separator className="mt-3 mb-6" />
-                  <ScrollArea className="h-[600px]">
+                  <ScrollArea className="h-[670px] md:h-[600px]">
                     <div className="flex flex-col pt-4 pb-8 justify-start items-start px-4">
                       <SheetTitle className="px-3.5 pb-4">
                         Categories
@@ -333,20 +333,21 @@ const ProductListing = () => {
           <div
             className={cn(
               montserrat.className,
-              "grid grid-cols-4 py-8 font-[15px]"
+              "grid grid-cols-2 md:grid-cols-4 py-8 font-[15px]"
             )}
           >
             {productList.map((data, index) => (
-              <div key={index} className="py-4">
+              <div key={index} className="py-4 gap-2">
                 <Link href={data.href}>
                   <img
                     src={data.src}
                     alt="product-image"
-                    className="h-[350px]"
+                    className="md:h-[350px] h-[150px]"
                   />
-                  <p className="pt-4 pb-2">{data.title}</p>
-                  <div className="flex font-semibold text-muted text-[#6f6868]">
-                    <pre>{data.desc}</pre>
+                  <p className="pt-4 pb-2 pr-2">{data.title}</p>
+                  <div className="font-semibold pr-2 text-[#777]">
+                    <p className="md:hidden">{data.desc}</p>
+                    <pre className="max-sm:hidden">{data.desc}</pre>
                   </div>
                 </Link>
               </div>

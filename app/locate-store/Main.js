@@ -8,11 +8,13 @@ import Link from "next/link"
 const MainView = () => {
   return (
     <>
-      <div className="bg-[url('/assets//inner_bg.jpg')] w-screen h-96 flex ">
-        <div className="py-32 pl-12 absolute">
-          <div className=" bg-white h-28 w-96 bg-contain">
-            <p className="text-4xl px-12 pt-8 text-rose-700">Store Locator</p>
-            <p className="px-12">K M Choksi</p>
+      <div className="bg-[url('/assets//inner_bg.jpg')] w-screen h-[150px] md:h-96 flex ">
+        <div className="md:py-32 md:pl-12 md:absolute flex justify-center my-auto">
+          <div className="text-center md:text-left bg-white h-28 w-[360px] ml-4 md:mx-8 md:w-96 bg-contain">
+            <p className="text-4xl md:px-12 md:pt-8 pt-4 text-rose-700">
+              Store Locator
+            </p>
+            <p className="md:px-12">K M Choksi</p>
           </div>
         </div>
         <Image
@@ -20,10 +22,10 @@ const MainView = () => {
           width={2560}
           height={1440}
           alt="brand-banner"
-          className="h-96 w-full pr-16 pl-64 flex justify-center pt-8 pb-8 "
+          className="md:h-96 md:w-full md:pr-16 md:pl-64 md:flex md:justify-center md:pt-8 md:pb-8 hidden"
         />
       </div>
-      <div className="py-12 px-10 flex flex-row">
+      <div className="py-12 px-10 flex flex-col md:flex-row">
         <div className="pt-16 flex flex-col space-y-7">
           <div>
             <p className="font-semibold text-2xl mb-3">Surat</p>
@@ -55,11 +57,11 @@ const MainView = () => {
           width={2560}
           height={1440}
           alt="brand-banner"
-          className="h-auto w-[1000px] ml-40 flex justify-center "
+          className="h-[170px] w-[400px] md:h-auto md:w-[1000px] max-sm:pt-8 md:ml-40 flex justify-center "
         />
       </div>
-      <div className="py-12 px-10 flex flex-row">
-        <div className="pt-16 flex flex-col space-y-7">
+      <div className="py-12 px-10 flex flex-col md:flex-row">
+        <div className="md:pt-16 pt-8 flex flex-col space-y-7">
           <div>
             <p className="font-semibold text-2xl mb-3">Kosamba</p>
             <p>Dawjee Shopping Centre, 7,</p>
@@ -90,10 +92,10 @@ const MainView = () => {
           width={2560}
           height={1440}
           alt="brand-banner"
-          className="h-auto w-[1000px] ml-40 flex justify-center "
+          className="h-[170px] w-[400px] md:h-auto md:w-[1000px] max-sm:pt-8 md:ml-40 flex justify-center "
         />
       </div>
-      <div className="px-56 py-12">
+      <div className="md:px-56 md:py-12 p-8">
         <div className="pb-10 flex flex-col space-y-2">
           <p className="text-2xl font-semibold ">
             We would love to hear from you.

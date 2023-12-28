@@ -2,12 +2,14 @@ import Image from "next/image"
 
 const Content = () => {
   return (
-    <div className="pb-6">
-      <div className="bg-[url('/assets//inner_bg.jpg')] w-screen h-96 flex ">
-        <div className="py-32 pl-12 absolute">
-          <div className=" bg-white h-28 w-96 bg-contain">
-            <p className="text-4xl px-12 pt-8 text-rose-700">Our History</p>
-            <p className="px-12">The Wedding Jewellery</p>
+    <div className="pb-6 w-screen">
+      <div className="bg-[url('/assets//inner_bg.jpg')] w-screen h-[150px] md:h-96 flex ">
+        <div className="md:py-32 md:pl-12 md:absolute flex justify-center my-auto">
+          <div className="text-center md:text-left bg-white h-28 w-[360px] ml-4 md:mx-8 md:w-96 bg-contain">
+            <p className=" text-4xl md:px-12 md:pt-8 pt-4 text-rose-700">
+              Our History
+            </p>
+            <p className="md:px-12">The Wedding Jewellery</p>
           </div>
         </div>
         <Image
@@ -15,28 +17,30 @@ const Content = () => {
           width={2560}
           height={1440}
           alt="brand-banner"
-          className="h-96 w-full pr-16 pl-64 flex justify-center pt-8 pb-8 "
+          className="md:h-96 md:w-full md:pr-16 md:pl-64 md:flex md:justify-center md:pt-8 md:pb-8 hidden"
         />
       </div>
 
-      <div className="flex flex-col gap-4 my-8 py-8">
-        <div className=" flex flex-row my-4 gap-4 px-9">
-          <Image
-            src="/assets/about/about01.jpg"
-            width={350}
-            height={600}
-            alt="about"
-            className="px-2"
-          />
-          <Image
-            src="/assets/about/about02.jpg"
-            width={350}
-            height={600}
-            alt="about"
-            className="mx-4"
-          />
+      <div className="flex flex-col gap-4 py-8 w-screen md:my-8 md:py-8">
+        <div className=" flex flex-col md:flex-row md:my-4 md:gap-4 md:px-9">
+          <div className="flex justify-center">
+            <Image
+              src="/assets/about/about01.jpg"
+              width={350}
+              height={600}
+              alt="about"
+              className="px-2 md:w-[350px] md:h-[600px] w-[170px] h-[270px]"
+            />
+            <Image
+              src="/assets/about/about02.jpg"
+              width={350}
+              height={600}
+              alt="about"
+              className="mx-4 md:w-[350px] md:h-[600px] w-[170px] h-[270px]"
+            />
+          </div>
           <div className="pt-14">
-            <div className="pl-14 py-11 ml-14 w-[600px] bg-[#FAE7E4]">
+            <div className="px-8 mx-4  md:pl-14 py-11 md:ml-14 w-[360px] md:w-[600px] bg-[#FAE7E4]">
               <p className="text-3xl font-bold">About us</p>
               <p className="py-3 my-3">
                 Building a legacy brand in the jewellery business is a lifelong
@@ -51,8 +55,8 @@ const Content = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row gap-8 mx-9 my-8">
-          <div className="px-10 py-16 my-14 justify-center items-center mx-10">
+        <div className="flex flex-col md:flex-row gap-8 mx-9 my-8">
+          <div className="md:px-10 md:py-16 md:my-14 md:justify-center md:items-center md:mx-10 order-last md:order-first">
             <p className="font-bold text-4xl">Ashvinkumar Kesharimal Shah</p>
             <p className="py-4 my-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut,
@@ -71,14 +75,14 @@ const Content = () => {
             alt="kanyadan-collection"
           />
         </div>
-        <div className="flex flex-row gap-8 mx-9">
+        <div className="flex flex-col md:flex-row gap-8 mx-9">
           <Image
             src="/assets/about/ceo_kmchoksi02.jpg"
             width={700}
             height={200}
             alt="kanyadan-collection"
           />
-          <div className="px-10 py-16 my-14 justify-center items-center mx-10">
+          <div className="md:px-10 md:py-16 md:my-14 md:justify-center md:items-center md:mx-10">
             <p className="font-bold text-4xl">Sheelaben Ashwinkumar Shah</p>
             <p className="py-4 my-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut,
