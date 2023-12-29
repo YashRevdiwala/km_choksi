@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 const Content = () => {
   return (
@@ -40,8 +41,9 @@ const Content = () => {
               variant="secondary"
               size="lg"
               className="hover:bg-black hover:text-white border border-black"
+              asChild
             >
-              EXPLORE THE COLLECTION
+              <Link href={`/products`}>EXPLORE THE COLLECTION</Link>
             </Button>
           </div>
         </div>
@@ -56,8 +58,9 @@ const Content = () => {
               variant="secondary"
               size="lg"
               className="hover:bg-black hover:text-white border border-black"
+              asChild
             >
-              EXPLORE THE COLLECTION
+              <Link href={`/products`}>EXPLORE THE COLLECTION</Link>
             </Button>
           </div>
           <Image
@@ -84,8 +87,9 @@ const Content = () => {
               variant="secondary"
               size="lg"
               className="hover:bg-black hover:text-white border border-black"
+              asChild
             >
-              EXPLORE THE COLLECTION
+              <Link href={`/products`}>EXPLORE THE COLLECTION</Link>
             </Button>
           </div>
         </div>

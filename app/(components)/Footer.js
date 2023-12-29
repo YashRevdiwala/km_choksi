@@ -62,8 +62,13 @@ const Footer = () => {
       </div>
       <Separator className="mb-4" />
       <p className="md:pb-4 md:pt-2 pb-8 pt-2">
-        © 2023 K M Choksi jewellers. | Website Designed By:
-        <Link href="https://www.setblue.com/">Setblue</Link>
+        © 2023 K M Choksi jewellers. | Website Designed By:{" "}
+        <Link
+          href="https://www.setblue.com/"
+          className="underline underline-offset-2"
+        >
+          Setblue
+        </Link>
       </p>
     </div>
   )
