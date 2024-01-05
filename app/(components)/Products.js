@@ -10,34 +10,34 @@ const Products = () => {
       <div className="flex flex-row flex-wrap gap-4 justify-center px-6 pt-4">
         <img
           src="/assets/collection/banner01.jpg"
-          className="h-[490px] relative object-cover "
+          className="h-[490px] relative object-cover hover:animate-pulse"
           alt="banner-image"
         />
         <img
           src="/assets/collection/banner02.jpg"
-          className="h-[490px] relative object-cover "
+          className="h-[490px] relative object-cover hover:animate-pulse"
           alt="banner-image"
         />
         <img
           src="/assets/collection/banner03.jpg"
-          className="h-[490px] relative object-cover "
+          className="h-[490px] relative object-cover hover:animate-pulse"
           alt="banner-image"
         />
       </div>
       <div className="flex flex-row flex-wrap gap-9 justify-center px-6 py-6">
         <img
           src="/assets/collection/banner04.jpg"
-          className="h-[350px] relative object-cover "
+          className="h-[350px] relative object-cover hover:animate-pulse"
           alt="banner-image"
         />
         <img
           src="/assets/collection/banner05.jpg"
-          className="h-[350px] relative align-bottom object-cover "
+          className="h-[350px] relative align-bottom object-cover hover:animate-pulse"
           alt="banner-image"
         />
         <img
           src="/assets/collection/banner06.jpg"
-          className="h-[350px] relative object-cover "
+          className="h-[350px] relative object-cover hover:animate-pulse"
           alt="banner-image"
         />
       </div>

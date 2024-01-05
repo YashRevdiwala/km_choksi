@@ -1,8 +1,15 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
+import { motion, useInView } from "framer-motion"
+import { useRef, useState } from "react"
 
 const Content = () => {
+  const [inView, setInView] = useState(false)
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
   return (
     <div className="pb-6 w-screen">
       <div className="bg-[url('/assets//inner_bg.jpg')] w-screen h-[150px] md:h-96 flex ">
@@ -24,14 +31,31 @@ const Content = () => {
       </div>
 
       <div className="flex flex-col gap-4 my-8 py-8">
-        <div className="flex flex-col md:flex-row gap-8 mx-9 pb-8">
-          <Image
-            src="/assets/brands/brand-img.jpg"
-            width={700}
-            height={200}
-            alt="kanyadan-collection"
-          />
-          <div className="md:px-10 md:py-16 md:my-14 justify-center items-center text-center md:mx-10">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="flex flex-col md:flex-row gap-8 mx-9 pb-8"
+        >
+          <motion.div
+            initial={{ x: -700 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="/assets/brands/brand-img.jpg"
+              width={700}
+              height={200}
+              alt="kanyadan-collection"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ x: 700 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="md:px-10 md:py-16 md:my-14 justify-center items-center text-center md:mx-10"
+          >
             <p className="font-bold text-4xl">KANYADAN</p>
             <p className="text-2xl">PURE WEDDING COLLECTION</p>
             <p className="py-4 my-4">
@@ -45,10 +69,20 @@ const Content = () => {
             >
               <Link href={`/products`}>EXPLORE THE COLLECTION</Link>
             </Button>
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row gap-8 mx-9 py-8 md:my-8">
-          <div className="px-10 md:py-16 md:my-14 justify-center items-center text-center md:mx-10 order-last md:order-first">
+          </motion.div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="flex flex-col md:flex-row gap-8 mx-9 py-8 md:my-8"
+        >
+          <motion.div
+            initial={{ x: -600 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="px-10 md:py-16 md:my-14 justify-center items-center text-center md:mx-10 order-last md:order-first"
+          >
             <p className="font-bold text-4xl">KANYADAN</p>
             <p className="text-2xl">PURE WEDDING COLLECTION</p>
             <p className="py-4 my-4">
@@ -62,22 +96,46 @@ const Content = () => {
             >
               <Link href={`/products`}>EXPLORE THE COLLECTION</Link>
             </Button>
-          </div>
-          <Image
-            src="/assets/brands/brand-img01.jpg"
-            width={700}
-            height={200}
-            alt="kanyadan-collection"
-          />
-        </div>
-        <div className="flex flex-col md:flex-row gap-8 pt-8 mx-9">
-          <Image
-            src="/assets/brands/brand-img.jpg"
-            width={700}
-            height={200}
-            alt="kanyadan-collection"
-          />
-          <div className="px-10 md:py-16 md:my-14 justify-center items-center text-center md:mx-10">
+          </motion.div>
+          <motion.div
+            initial={{ x: 700 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="/assets/brands/brand-img01.jpg"
+              width={700}
+              height={200}
+              alt="kanyadan-collection"
+            />
+          </motion.div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="flex flex-col md:flex-row gap-8 pt-8 mx-9"
+        >
+          <motion.div
+            whileInView={{ x: 0 }}
+            initial={{ x: -700 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="/assets/brands/brand-img.jpg"
+              width={700}
+              height={200}
+              alt="kanyadan-collection"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ x: 700 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="px-10 md:py-16 md:my-14 justify-center items-center text-center md:mx-10"
+          >
             <p className="font-bold text-4xl">KANYADAN</p>
             <p className="text-2xl">PURE WEDDING COLLECTION</p>
             <p className="py-4 my-4">
@@ -91,8 +149,8 @@ const Content = () => {
             >
               <Link href={`/products`}>EXPLORE THE COLLECTION</Link>
             </Button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   )

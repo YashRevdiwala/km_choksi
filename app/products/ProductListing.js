@@ -18,6 +18,7 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area"
 import Slider from "./Slider"
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 const montserrat = Montserrat({
   subsets: ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
@@ -337,7 +338,18 @@ const ProductListing = () => {
             )}
           >
             {productList.map((data, index) => (
-              <div key={index} className="py-4 gap-2">
+              <motion.div
+                initial={{ y: 400, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 1,
+                  delay: index * 0.05,
+                  ease: "easeInOut",
+                }}
+                viewport={{ once: true }}
+                key={index}
+                className="py-4 gap-2"
+              >
                 <Link href={data.href}>
                   <img
                     src={data.src}
@@ -350,7 +362,7 @@ const ProductListing = () => {
                     <pre className="max-sm:hidden">{data.desc}</pre>
                   </div>
                 </Link>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

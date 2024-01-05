@@ -1,5 +1,6 @@
 import { Marcellus } from "next/font/google"
 import "./globals.css"
+import { cn } from "@/lib/utils"
 
 const marcellus = Marcellus({
   subsets: ["latin", "latin-ext"],
@@ -22,7 +23,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={marcellus.className}>{children}</body>
+      <body
+        className={cn(
+          marcellus.className,
+          "overflow-x-hidden max-sm:overflow-x-hidden"
+        )}
+      >
+        {children}
+      </body>
     </html>
   )
 }

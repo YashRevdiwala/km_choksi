@@ -1,4 +1,6 @@
+"use client"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 const Content = () => {
   return (
@@ -22,24 +24,48 @@ const Content = () => {
       </div>
 
       <div className="flex flex-col gap-4 py-8 w-screen md:my-8 md:py-8">
-        <div className=" flex flex-col md:flex-row md:my-4 md:gap-4 md:px-9">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className=" flex flex-col md:flex-row md:my-4 md:gap-4 md:px-9"
+        >
           <div className="flex justify-center">
-            <Image
-              src="/assets/about/about01.jpg"
-              width={350}
-              height={600}
-              alt="about"
-              className="px-2 md:w-[350px] md:h-[600px] w-[170px] h-[270px]"
-            />
-            <Image
-              src="/assets/about/about02.jpg"
-              width={350}
-              height={600}
-              alt="about"
-              className="mx-4 md:w-[350px] md:h-[600px] w-[170px] h-[270px]"
-            />
+            <motion.div
+              initial={{ x: -350 }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              viewport={{ once: true }}
+            >
+              <Image
+                src="/assets/about/about01.jpg"
+                width={350}
+                height={600}
+                alt="about"
+                className="px-2 md:w-[350px] md:h-[600px] w-[170px] h-[270px]"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ x: -700 }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              viewport={{ once: true }}
+            >
+              <Image
+                src="/assets/about/about02.jpg"
+                width={350}
+                height={600}
+                alt="about"
+                className="mx-4 md:w-[350px] md:h-[600px] w-[170px] h-[270px]"
+              />
+            </motion.div>
           </div>
-          <div className="pt-14">
+          <motion.div
+            initial={{ x: 700 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="pt-14"
+          >
             <div className="px-8 mx-4  md:pl-14 py-11 md:ml-14 w-[360px] md:w-[600px] bg-[#FAE7E4]">
               <p className="text-3xl font-bold">About us</p>
               <p className="py-3 my-3">
@@ -53,12 +79,22 @@ const Content = () => {
                 ahead.
               </p>
             </div>
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row gap-8 mx-9 my-8">
-          <div className="md:px-10 md:py-16 md:my-14 md:justify-center md:items-center md:mx-10 order-last md:order-first">
+          </motion.div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="flex flex-col md:flex-row gap-8 mx-9 my-8"
+        >
+          <motion.div
+            initial={{ x: -700 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="md:px-10 md:py-16 md:my-14 md:justify-center md:items-center md:mx-10 order-last md:order-first "
+          >
             <p className="font-bold text-4xl">Ashvinkumar Kesharimal Shah</p>
-            <p className="py-4 my-4">
+            <p className="py-4 my-4 md:w-[600px]">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut,
               officia, commodi porro consequatur suscipit tempora asperiores
               dolore voluptate doloremque excepturi molestias. Hic quas possimus
@@ -67,24 +103,44 @@ const Content = () => {
               eum reiciendis, nostrum delectus! Reiciendis ipsam unde voluptatem
               fuga vitae incidunt!
             </p>
-          </div>
-          <Image
-            src="/assets/about/ceo_kmchoksi01.jpg"
-            width={700}
-            height={200}
-            alt="kanyadan-collection"
-          />
-        </div>
+          </motion.div>
+          <motion.div
+            initial={{ x: 600 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="/assets/about/ceo_kmchoksi01.jpg"
+              width={700}
+              height={200}
+              alt="kanyadan-collection"
+            />
+          </motion.div>
+        </motion.div>
         <div className="flex flex-col md:flex-row gap-8 mx-9">
-          <Image
-            src="/assets/about/ceo_kmchoksi02.jpg"
-            width={700}
-            height={200}
-            alt="kanyadan-collection"
-          />
-          <div className="md:px-10 md:py-16 md:my-14 md:justify-center md:items-center md:mx-10">
+          <motion.div
+            initial={{ x: -700 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="/assets/about/ceo_kmchoksi02.jpg"
+              width={700}
+              height={200}
+              alt="kanyadan-collection"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ x: 700 }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            className="md:px-10 md:py-16 md:my-14 md:justify-center md:items-center md:mx-10"
+            viewport={{ once: true }}
+          >
             <p className="font-bold text-4xl">Sheelaben Ashwinkumar Shah</p>
-            <p className="py-4 my-4">
+            <p className="py-4 my-4 md:w-[600px]">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut,
               officia, commodi porro consequatur suscipit tempora asperiores
               dolore voluptate doloremque excepturi molestias. Hic quas possimus
@@ -93,7 +149,7 @@ const Content = () => {
               eum reiciendis, nostrum delectus! Reiciendis ipsam unde voluptatem
               fuga vitae incidunt!
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

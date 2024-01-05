@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 const About = () => {
   const brands = [
@@ -19,21 +20,41 @@ const About = () => {
         <p className="mt-3">K M CHOKSI JEWELLERS</p>
       </div>
       <div className=" flex md:flex-row flex-col md:my-4 md:gap-4 ">
-        <Image
-          src="/assets/about/about01.jpg"
-          width={350}
-          height={600}
-          alt="about"
-          className="px-2 hidden md:block"
-        />
-        <Image
-          src="/assets/about/about02.jpg"
-          width={350}
-          height={600}
-          alt="about"
-          className="mx-4 hidden md:block"
-        />
-        <div className="md:pl-14 md:pt-14 pt-2 md:ml-14 md:w-[450px] w-[350px]">
+        <motion.div
+          initial={{ x: -350 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+          viewport={{ once: true }}
+        >
+          <Image
+            src="/assets/about/about01.jpg"
+            width={350}
+            height={600}
+            alt="about"
+            className="px-2 hidden md:block"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ x: -700 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+          viewport={{ once: true }}
+        >
+          <Image
+            src="/assets/about/about02.jpg"
+            width={350}
+            height={600}
+            alt="about"
+            className="px-2 hidden md:block"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ x: 700 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="md:pl-14 md:pt-14 pt-2 md:ml-14 md:w-[450px] w-[350px]"
+        >
           <p className="text-3xl font-bold">About us</p>
           <p className="py-3 my-3">
             Building a legacy brand in the jewellery business is a lifelong
@@ -52,7 +73,7 @@ const About = () => {
           >
             <Link href="/our-history">About us</Link>
           </Button>
-        </div>
+        </motion.div>
         <div className="flex flex-row md:hidden w-auto py-10 justify-start space-x-2">
           <Image
             src="/assets/about/about01.jpg"
