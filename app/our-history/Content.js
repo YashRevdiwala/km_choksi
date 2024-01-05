@@ -24,15 +24,11 @@ const Content = () => {
       </div>
 
       <div className="flex flex-col gap-4 py-8 w-screen md:my-8 md:py-8">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          className=" flex flex-col md:flex-row md:my-4 md:gap-4 md:px-9"
-        >
+        <div className=" flex flex-col md:flex-row md:my-4 md:gap-4 md:px-9">
           <div className="flex justify-center">
             <motion.div
-              initial={{ x: -350 }}
-              whileInView={{ x: 0 }}
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
               viewport={{ once: true }}
             >
@@ -45,8 +41,8 @@ const Content = () => {
               />
             </motion.div>
             <motion.div
-              initial={{ x: -700 }}
-              whileInView={{ x: 0 }}
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
               viewport={{ once: true }}
             >
@@ -60,8 +56,8 @@ const Content = () => {
             </motion.div>
           </div>
           <motion.div
-            initial={{ x: 700 }}
-            whileInView={{ x: 0 }}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             viewport={{ once: true }}
             className="pt-14"
@@ -80,15 +76,11 @@ const Content = () => {
               </p>
             </div>
           </motion.div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          className="flex flex-col md:flex-row gap-8 mx-9 my-8"
-        >
+        </div>
+        <div className="flex flex-col md:flex-row gap-8 mx-9 my-8">
           <motion.div
-            initial={{ x: -700 }}
-            whileInView={{ x: 0 }}
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             viewport={{ once: true }}
             className="md:px-10 md:py-16 md:my-14 md:justify-center md:items-center md:mx-10 order-last md:order-first "
@@ -105,8 +97,8 @@ const Content = () => {
             </p>
           </motion.div>
           <motion.div
-            initial={{ x: 600 }}
-            whileInView={{ x: 0 }}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             viewport={{ once: true }}
           >
@@ -117,11 +109,11 @@ const Content = () => {
               alt="kanyadan-collection"
             />
           </motion.div>
-        </motion.div>
+        </div>
         <div className="flex flex-col md:flex-row gap-8 mx-9">
           <motion.div
-            initial={{ x: -700 }}
-            whileInView={{ x: 0 }}
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             viewport={{ once: true }}
           >
@@ -133,8 +125,8 @@ const Content = () => {
             />
           </motion.div>
           <motion.div
-            initial={{ x: 700 }}
-            whileInView={{ x: 0 }}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             className="md:px-10 md:py-16 md:my-14 md:justify-center md:items-center md:mx-10"
             viewport={{ once: true }}

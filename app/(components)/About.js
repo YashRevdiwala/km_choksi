@@ -21,8 +21,8 @@ const About = () => {
       </div>
       <div className=" flex md:flex-row flex-col md:my-4 md:gap-4 ">
         <motion.div
-          initial={{ x: -350 }}
-          whileInView={{ x: 0 }}
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
           viewport={{ once: true }}
         >
@@ -35,8 +35,8 @@ const About = () => {
           />
         </motion.div>
         <motion.div
-          initial={{ x: -700 }}
-          whileInView={{ x: 0 }}
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
           viewport={{ once: true }}
         >
@@ -49,8 +49,8 @@ const About = () => {
           />
         </motion.div>
         <motion.div
-          initial={{ x: 700 }}
-          whileInView={{ x: 0 }}
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
           viewport={{ once: true }}
           className="md:pl-14 md:pt-14 pt-2 md:ml-14 md:w-[450px] w-[350px]"

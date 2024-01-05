@@ -7,11 +7,11 @@ import { motion } from "framer-motion"
 const Kanyadan = () => {
   return (
     <>
-      <div className="flex flex-col gap-6 md:gap-4 md:my-8 md:py-8  w-screen">
+      <div className="flex flex-col gap-6 md:gap-4 md:my-8 md:py-8 w-screen">
         <div className="flex flex-col text-center md:flex-row gap-2 mx-9">
           <motion.div
-            initial={{ x: -700 }}
-            whileInView={{ x: 0 }}
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             viewport={{ once: true }}
           >
@@ -23,8 +23,8 @@ const Kanyadan = () => {
             />
           </motion.div>
           <motion.div
-            initial={{ x: 700 }}
-            whileInView={{ x: 0 }}
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             viewport={{ once: true }}
             className="py-3 my-3 md:px-10 md:py-16 md:my-14 justify-center items-center mx-10"
@@ -46,8 +46,8 @@ const Kanyadan = () => {
         </div>
         <div className="flex flex-col text-center md:flex-row gap-2 mx-9 my-8">
           <motion.div
-            initial={{ x: -600 }}
-            whileInView={{ x: 0 }}
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             viewport={{ once: true }}
             className="py-3 my-3 md:px-10 md:py-16 md:my-14 justify-center items-center mx-10 order-last md:order-first"
@@ -67,8 +67,8 @@ const Kanyadan = () => {
             </Button>
           </motion.div>
           <motion.div
-            initial={{ x: 700 }}
-            whileInView={{ x: 0 }}
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             viewport={{ once: true }}
           >

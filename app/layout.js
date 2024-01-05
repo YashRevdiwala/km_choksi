@@ -23,12 +23,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          marcellus.className,
-          "overflow-x-hidden max-sm:overflow-x-hidden"
-        )}
-      >
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+      </head>
+      <body className={cn(marcellus.className, "overflow-x-hidden")}>
         {children}
       </body>
     </html>
